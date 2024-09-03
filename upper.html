@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <input type="text" id="txt"><br>
+    <button type="button" id="up" onclick="upper()">Uppercase</button>
+    <button type="button" id="low" onclick="lower()">Lowercase</button>
+
+    <script>
+        function upper() {
+            let text = document.querySelector("#txt").value;
+            document.querySelector("#txt").value = text.toUpperCase();
+        }
+
+        function lower() {
+            let text = document.querySelector("#txt").value;
+            document.querySelector("#txt").value = text.toLowerCase();
+        }
+    </script>
+</body>
+</html>

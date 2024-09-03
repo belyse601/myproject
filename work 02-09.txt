@@ -1,0 +1,23 @@
+1. *primitive datatype:these are the basic datatype provided by a programming language.
+they hold a single value
+ex:number:10,3.14;
+   string:hello,world;
+   boolean:true,false
+   *non-primitive datatypes:these datatypes can hold multiple values or a collection of values.
+ex:array:[1,2,3]
+   function:return
+   object:name,age,
+2.*local variables:these are variables that are declared inside a function
+ex:function example() {
+  let localVar = "I'm local";
+  console.log(localVar); 
+}
+
+*global variables:these variables declared outside a function
+ex:let globalVar = "I'm global";
+function example() {
+  console.log(globalVar); 
+}
+
+3. == (Double Equals): this checks if two values are equal but it does not consider their datatypes.
+   === (Triple Equals):this checks if two values are equal and also if they are of the same datatype.

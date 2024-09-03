@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Email: <input type="text" class="email"><br>
+    <button id="ok" onclick="val_email()">Subscribe</button>
+    <script>
+        function val_email() {
+            let mail = document.querySelector(".email").value.trim();
+            console.log("Input Email:", mail);  // Log the email for debugging
+
+            // Regular expression to check if the email is valid
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailPattern.test(mail)) {
+                alert("Invalid email");
+            } else {
+                alert("Email is valid!");
+            }
+        }
+    </script>
+</body>
+</html>

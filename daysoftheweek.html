@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <h1>weekdays_quotes</h1>
+    <form>
+        <label for="">Weekday</label>
+        <select name="" id="weekday">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="otherwise">Otherwise</option>
+        </select> <br>
+        <button type="button" onclick="check()">Check</button>
+    </form>
+    <script>
+        function check() {
+            let weekday = document.querySelector("#weekday").value;
+            switch(weekday){
+            case "monday":
+                alert("beginning of journey");
+            break
+             case "tuesday":
+                alert("another day to hustle");
+            break
+            case "wednesday":
+                alert("day to evaluate yourself");
+           break
+             case"thursday":
+                alert("day to serve");
+            break
+            case "friday":
+                alert("day to enjoy");
+            break
+            default:
+                alert("enjoy the weekend");
+                break
+            } }
+            
+        
+    </script>
+</body>
+</html>

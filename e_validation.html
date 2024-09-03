@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    email:<input type="text" class="email"><br>
+    <button id="ok" onclick="val_email()">subscribe</button>
+    <script>
+        let mail=""
+        function val_email() {
+            let mail=document.querySelector(".email").value
+            if (mail.search("@")<0) {
+                alert("invalid email")
+            }
+           if (mail.search(".")<mail.search("@")) {
+                alert("invalid email")
+            }
+            
+        }
+    </script>
+</body>
+</html>
